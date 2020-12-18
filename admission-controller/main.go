@@ -43,7 +43,7 @@ func init() {
 		"File containing the default x509 Certificate for HTTPS. (CA cert, if any, concatenated after server cert).")
 	flag.StringVar(&keyFile, "tls-private-key-file", "",
 		"File containing the default x509 private key matching --tls-cert-file.")
-	flag.IntVar(&port, "port", 443,
+	flag.IntVar(&port, "port", 9443,
 		"Secure port that the webhook listens on")
         flag.StringVar(&sidecarImage, "sidecar-image", "",
 		"Image to be used as the injected sidecar")

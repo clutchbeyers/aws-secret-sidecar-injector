@@ -13,7 +13,7 @@ def mutation():
 
     annotations = review['request']['object']['metadata']['annotations']
     app.logger.info("Annotations on the pod are: %s",annotations)
-    
+
     response = {}
 
     # Only allow if there are valid annotationn
@@ -22,8 +22,8 @@ def mutation():
     else:
         app.logger.info("Annotations present ...")
         app.logger.info("Injecting init container to the pod definition ...")
-        response = secrets_initcont_patch(annotations,response)    
-    
+        response = secrets_initcont_patch(annotations,response)
+
     response['allowed'] = True
     review['response'] = response
     #app.logger.info("Mutating AdmissionReview request: %s", review)
@@ -63,9 +63,9 @@ def secrets_initcont_patch(annotations,response):
         {
 	        "op": "add",
 	        "path": "/spec/volumes/-",
-	        "value": 
+	        "value":
             {
-	        	"emptyDir": 
+	        	"emptyDir":
                 {
 	        		"medium": "Memory"
 	        	},
@@ -84,4 +84,4 @@ context = (
     os.environ.get("WEBHOOK_CERT", "/tls/tls.crt"),
     os.environ.get("WEBHOOK_KEY", "/tls/tls.key"),
 )
-app.run(host='0.0.0.0', port='443', debug=False, ssl_context=context)
+app.run(host='0.0.0.0', port='9443', debug=False, ssl_context=context)

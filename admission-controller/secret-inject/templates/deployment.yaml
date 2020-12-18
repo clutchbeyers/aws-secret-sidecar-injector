@@ -30,5 +30,5 @@ spec:
           - "--tls-private-key-file=/tls/tls.key"
           - "--sidecar-image=docker.io/amazon/aws-secrets-manager-secret-sidecar:v0.1.1"
           ports:
-          - containerPort: 443
+          - containerPort: 9443
           imagePullPolicy: Always
