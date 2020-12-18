@@ -1,3 +1,5 @@
+
+# test
 FROM amazonlinux AS build
 RUN yum -y update && yum -y install tar gzip
 RUN curl -o go1.14.3.linux-amd64.tar.gz https://dl.google.com/go/go1.14.3.linux-amd64.tar.gz -s
