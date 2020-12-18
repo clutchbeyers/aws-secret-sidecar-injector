@@ -1,3 +1,3 @@
 FROM amazonlinux
-COPY ./adm-controller /adm-controller
-ENTRYPOINT ["/adm-controller"]
+COPY ./admission-controller /admission-controller
+ENTRYPOINT ["/admission-controller"]
