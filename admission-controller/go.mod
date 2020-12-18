@@ -1,4 +1,4 @@
-module github.com/amit0701/adm-controller
+module github.com/clutchbeyers/aws-secret-sidecar-injector
 
 go 1.13
 
