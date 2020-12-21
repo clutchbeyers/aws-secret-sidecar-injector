@@ -3,11 +3,11 @@ entries:
   secret-inject:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-12-19T12:19:33.492773-06:00"
+    created: "2020-12-20T20:56:45.466099-06:00"
     description: A Helm chart for installing AWS Secret Controller webhook
-    digest: bc04d3fec360fa9bd361442d461456a3977730e72d160a0658304d49b6f7ecf8
+    digest: 53f312d0d17fe53284ab25f7ad531789d4ee3038e66b4005908ca497239a0fd8
     name: secret-inject
     urls:
     - https://clutchbeyers.github.io/aws-secret-sidecar-injector/secret-inject-0.1.1.tgz
     version: 0.1.1
-generated: "2020-12-19T12:19:33.492298-06:00"
+generated: "2020-12-20T20:56:45.465146-06:00"
