@@ -8,7 +8,7 @@ RUN go mod download
 COPY ./admission-controller /build
 RUN CGO_ENABLED=0 GOOS=linux go build -a -o /admission-controller /build
 
-FROM alpine:3.10
+FROM amazonlinux
 
 COPY --from=builder /admission-controller /admission-controller
 COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/

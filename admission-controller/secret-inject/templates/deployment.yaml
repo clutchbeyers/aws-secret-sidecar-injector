@@ -20,7 +20,7 @@ spec:
             secretName: "secret-inject-tls"
       containers:
         - name: "secret-inject-init"
-          image: "docker.io/clutchbeyers/aws-secrets-manager-secret-adm-controller:0.1.1"
+          image: "docker.io/clutchbeyers/aws-secrets-manager-secret-adm-controller:0.1.2"
           volumeMounts:
             - name: certs
               mountPath: /tls
