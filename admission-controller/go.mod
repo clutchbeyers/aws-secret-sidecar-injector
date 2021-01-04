@@ -1,6 +1,7 @@
 module github.com/clutchbeyers/aws-secret-sidecar-injector
 
 
+
 go 1.13
 
 require (
